@@ -1,12 +1,42 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+class LoginForm extends React.Component {
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+
+  render() {
+    return (
+      <div>
+        <form onSubmit={this.handleSubmit}>
+          <label htmlFor="email">
+            Email Address
+          </label><br/>
+          <input
+            id="email"
+          /><br/>
+          <label htmlFor="password">
+            Password
+          </label><br/>
+          <input
+            id="password"
+          /><br/>
+          <button id="signIn">
+            sign in
+          </button><br/>
+          <button id="create-account">
+            create an account
+          </button><br/>
+          <button id="forgot-password">
+            forgot password
+          </button>
+        </form>
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(
+  <LoginForm />,
+  document.getElementById('login-form')
+);
