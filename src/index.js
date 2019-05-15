@@ -161,9 +161,11 @@ class TodayView extends React.Component {
             <Task todo="Some stuff" project="Birdseye - Application"/>
           </ul>
           <div class="separator">
-            <section>
-            <span id="completed">------------------   Completed   ------------------</span>
-            </section>
+            <div class="spacer">
+              <section id="dash">
+                <span id="completed">Completed</span>
+              </section>
+            </div>
           </div>
           <ul class="taskList">
             <Task classname="finished" todo="Some stuff" project="Birdseye - Application"/>

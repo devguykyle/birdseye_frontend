@@ -12,6 +12,14 @@ a{
   color: white;
 }
 
+h1 {
+  margin-bottom: 7px;
+}
+
+h6 {
+  margin-top: 2px;
+}
+
 .main {
   height: 100%;
 }
@@ -63,13 +71,13 @@ a{
 
 .separator {
   width: 100%;
+  height: 100px;
   text-align: center;
 }
 
-.separator section{
-  height: 100px;
-  line-height: 100px;
-  white-space: nowrap;
+.spacer{
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .finished {
@@ -195,6 +203,18 @@ a{
 
 #completed {
   color: grey;
+  background: #D3D3D3;
+  padding: 0 5px;
+}
+
+#dash{
+  border-bottom: 1px dashed grey;
+  text-align: center;
+  height: 10px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
 }
 
 #cardMainText {
