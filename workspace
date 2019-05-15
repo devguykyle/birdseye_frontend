@@ -1,0 +1,60 @@
+<AppBar position="static">
+  <Toolbar>
+    <IconButton color="inherit" aria-label="Open drawer">
+      <MenuIcon />
+    </IconButton>
+    <Typography variant="h6" color="inherit" noWrap>
+      Material-UI
+    </Typography>
+    <div/>
+    <div>
+      <div>
+        <SearchIcon />
+      </div>
+      <InputBase
+        placeholder="Search…"
+      />
+    </div>
+  </Toolbar>
+</AppBar>
+
+
+
+
+<section id="tasks">
+  <TaskListView/>
+</section>
+
+<section id="menu-etc">
+  <SearchBar/>
+</section>
+
+<section id="today" class="day-area">
+</section>
+
+<section id="tomorrow" class="day-area">
+</section>
+
+
+
+
+
+<div class="searchMenu">
+  <div id="barLogo">
+  someLogo
+  </div>
+  <div id="searchBar">
+    <input type="text" value={this.state.value}/>
+  </div>
+  <div id="upgradeOption">
+    other info
+  </div>
+</div>
+
+<AppBar class="menu-etc" position="static">
+  <IconButton id="beyeLogo" aria-label="Open drawer">
+    <MenuIcon />
+  </IconButton>
+  <SearchIcon />
+  <InputBase placeholder="Search…"/>
+</AppBar>
